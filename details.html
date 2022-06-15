@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web App</title>
+    <style>
+        .header{
+            background-color: burlywood;
+            height: 55px;
+            text-align: center;
+            font-family: Arial;
+            font-size: large;
+        }
+        .main_post{
+            display:block;
+            width: auto;
+            background-color: darkolivegreen;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .post{
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="row">
+          <div class="col"><h1>First application</h1>
+          </div>
+        </div>
+
+        <div class="content">
+         {% for work in test%}
+        <div class="card border-secondary mb-3" style="max-width: 30rem;">
+            <h2>{{work.app1}}</h2>
+            <p class="card-text">{{work.technology}}</p>
+            <h5></h5>{{work.description}}</h5>
+        
+        <!--<a href="details.html" class="btn border-info">Read More..</a>-->
+        <!--<button type="button" class="btn btn-outline-secondary">Next..</button>-->
+        
+        </div>
+        {% endfor %}
+    </div> 
+
+  </div>
+              
+</div>
+
+
+    
+    
+    
+</body>
+</html>
